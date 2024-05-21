@@ -31,7 +31,7 @@ h2 {
     font-size: 28px;
     letter-spacing: 0.6px;
     line-height: 35px;
-    font-weight: 300;
+    font-weight: 350;
 }
 h3 {
     font-size: 18px;
@@ -58,17 +58,58 @@ p + .smallparagraph {
 /*FOOTER*/
 
 footer {
-padding-left: 2.5rem;
-padding-right: 2.5rem;
-padding-top: 4rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+padding-top: 5rem;
+}
+footer h2 {
+    letter-spacing: -1.1px;
+    line-height: 32.8px;
+}
+footer h3 {
+    letter-spacing: -0.5px;
+    line-height: 32.8px;
+    margin-bottom: 0.3rem;
+}
+footer p {
+    letter-spacing: -0.5px;
+    line-height: 24px;
+}
+footer .icon {
+    margin-top: 0.3rem;
+    padding-left: 1rem;
+}
+footer img {
+    width: 90%;
+    height: auto;
 }
 
 .kontakt_info {
- padding-bottom: 4rem;
+ padding-bottom: 3.8rem;
 }
 .kontakt_tekst {
-    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
    }
+
+.kontakt_tekst2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#kontakt_tekst3 {
+    padding-right: 5.5rem;
+}
+#kontakt_link {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+}
+
 /* DESKTOP SECTION */
 
 @media only screen and (min-width: 600px) {
