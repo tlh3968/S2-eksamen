@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+
+}
+
 body {
 
 }
@@ -81,6 +85,14 @@ nav > a:active {
     text-decoration: underline;
 }
 
+/* every BODY hit the floor <- AKA BODY */
+
+/* Checkliste part */
+
+.checklist {
+    background-color: #aaba7d;
+    color: white;
+}
 
 /* FOOTER */
 
@@ -150,6 +162,7 @@ footer img {
     padding-bottom: 1.5rem;
 }
 
+
 /* DESKTOP SECTION */
 
 @media only screen and (min-width: 740px) { /* tablet*/
@@ -179,9 +192,7 @@ footer img {
     .kontakt_tekst {
         padding-right: 3.8rem;
     }
-    #phone {
-        margin-top: 2.4rem;
-    }
+
     .kontakt_tekst4 {
         flex-direction: row;
         padding-bottom: 1rem;
@@ -217,16 +228,48 @@ footer img {
 }
 @media only screen and (min-width: 1439px) { /* medium laptop*/
     .kontakt_info {
+        display: flex;
         flex-direction: row; 
         justify-content: space-between; 
         align-items: flex-end; 
+        margin-top: 20rem;
     }
 
-
    footer img {
-    width: 20%;
+    width: 100%;
     padding-bottom: 0rem;
    }
+   .kontakt_tekst {
+    padding-right: 2rem;
+   }
+   #kontakt_tekst3 {
+    padding-right: 4rem;
+}
+    #phone {
+        padding-right: 0rem;
+    }
+
+    .kontakt_tekst4 {
+        order: 2;
+    }
+    .kontakt_tekst2 {
+        order: 3;
+    }
+    #phone {
+        
+        padding-top: 2.3rem;
+    }
+    footer img {
+        order: 1;
+        
+    }
+    .kontakt_tekst {
+        order: 4!important; 
+        
+    }
+    #cvr {
+        padding-bottom: 1.3rem;
+    }
 }
 @media only screen and (min-width: 1919px) { /* medium laptop*/
     
