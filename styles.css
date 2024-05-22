@@ -3,13 +3,6 @@
     padding: 0;
 }
 
-:root {
-
-}
-
-body {
-
-}
 
 main {
     padding-top: 75px;
@@ -37,6 +30,7 @@ h2 {
     letter-spacing: 0.6px;
     line-height: 35px;
     font-weight: 350;
+    padding-bottom: 1rem;
 }
 h3 {
     font-size: 18px;
@@ -97,21 +91,122 @@ nav > a:active {
 /* Checkliste part */
 
 .checklist {
+    display: flex;
+    flex-direction: column;
     background-color: #aaba7d;
     color: white;
+    margin: 10rem -10px 0px -10px; 
+    padding-bottom: 2rem;
+    align-items: center;
 }
 
-/* FOOTER */
+.checklist h2{
+    padding: 2rem;
+    align-items: center;
+}
+.checklist p{
+    padding-left: 2rem;
+}
+.checklist_images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checklist_img {
+    width: 100%;
+    height: auto;
+    margin-top: -7rem;
+}
 
+.checklist_text {
+    align-items: center;
+    display: flex;
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.checklist button {
+    border-radius: 1000px;
+    width: 10rem;
+    padding: 10px 20px;
+    border: none;
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 2rem; /* Optional: Adds some spacing above the button */
+    align-self: center; /* Ensures the button is centered within the flex container */
+    cursor: pointer;}
+
+
+/* MAIN brødtekst */
+
+.body_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.body_text h2 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.main_text {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+/* QUOTES*/
+ .quotes {
+    margin-top: 6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ }
+
+ .quotes h2 {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+}
+ .all_quotes {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+ .profilbillede {
+    border-radius: 1000px;
+    width: 20%;
+    box-shadow: 0px 0px 10px rgb(170, 170, 170);
+    margin: 1rem;
+ }
+ .quote_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+ }
+
+ .quote_name {
+    color:#a3a6a8
+ }
+ .fa-quote-right, .fa-quote-left {
+    padding: 5px;
+ }
+ 
+
+/* FOOTER */
 footer {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 footer h2 {
     letter-spacing: -1.1px;
     line-height: 32.8px;
+    padding-bottom: 0rem;
 }
 
 footer h3 {
@@ -131,13 +226,8 @@ footer img {
     width: 90%;
     height: auto;
     margin-top: 3rem;
-    padding-bottom: 5rem;
-}
-
-.kontakt_info {
     padding-bottom: 3rem;
 }
-
 .kontakt_tekst {
     display: flex;
     flex-direction: column;
@@ -194,6 +284,19 @@ footer img {
         line-height: 20px;
     }
 
+    /*checklist*/
+    .body_text {
+        flex-direction: row-reverse;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .main_text {
+        width: 50%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
     /* FOOOTER */
     .kontakt_tekst {
         padding-right: 3.8rem;
@@ -204,9 +307,19 @@ footer img {
         padding-bottom: 1rem;
     }
 
-    footer img {
+    footer img{
         width: 50%;
     }
+
+    #phone {
+        padding-top: 3.9rem;
+    }
+    .checklist_img {
+        width: 10%;
+    }
+ .quotes h2 {
+    padding: 2rem;
+ }
 }
 
 @media only screen and (min-width: 1023px) { /* small laptop*/
@@ -231,8 +344,36 @@ footer img {
         width: 40%;
         padding-bottom: 0rem;
        }
+
+    #phone {
+        padding-top: 2rem;
+    }
 }
 @media only screen and (min-width: 1439px) { /* medium laptop*/
+   
+    .checklist {
+        flex-direction: row-reverse;
+        height: 500px;
+    }
+    .checklist-text {
+        width: 100rem;
+    } 
+
+    .checklist_img {
+        width: 60%;
+        height: auto;
+        
+    }
+
+    .checklist_images {
+        align-items: end;
+    }
+
+ .body_text {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /*FOOOTER*/
     .kontakt_info {
         display: flex;
         flex-direction: row; 
@@ -275,6 +416,19 @@ footer img {
     }
     #cvr {
         padding-bottom: 1.3rem;
+    }
+    .all_quotes {
+        flex-direction: row;
+    }
+    .quote_container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    main {
+        margin-top: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 @media only screen and (min-width: 1919px) { /* medium laptop*/
