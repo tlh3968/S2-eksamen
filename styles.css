@@ -8,12 +8,14 @@ body {
 }
 
 main {
-padding-left: 10px;
-padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 footer {
     background-color: #E9ECEE;
 }
+
 h1, h2, p, h3 {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -55,17 +57,31 @@ p + .smallparagraph {
 }
 
 
-/*FOOTER*/
+/* NAV */
+nav {
+    background-color: white;
+    height: 24px;
+    width: 100%;
+    padding: 19px;
+    padding-left: 146px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* FOOTER */
 
 footer {
-padding-left: 1.5rem;
-padding-right: 1.5rem;
-padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5rem;
 }
+
 footer h2 {
     letter-spacing: -1.1px;
     line-height: 32.8px;
 }
+
 footer h3 {
     letter-spacing: -0.5px;
     line-height: 32.8px;
@@ -87,15 +103,16 @@ footer img {
 }
 
 .kontakt_info {
- padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
+
 .kontakt_tekst {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-   }
+}
 
 .kontakt_tekst2 {
     display: flex;
