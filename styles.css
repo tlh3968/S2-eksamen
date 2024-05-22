@@ -12,8 +12,7 @@ body {
 }
 
 main {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 75px;
 }
 
 footer {
@@ -64,21 +63,29 @@ p + .smallparagraph {
 /* NAV */
 nav {
     background-color: white;
-    height: 24px;
     width: 100%;
-    padding: 19px;
-    padding-left: 146px;
-    padding-right: 146px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 25px;
+    padding: 25px 0 25px 0;
+    z-index: 999;
     position: fixed;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav > a {
     color: black;
     text-decoration: none;
     font-size: 16px;
+}
+
+nav > a:first-child {
+    padding-left: 2rem;
+}
+
+nav > a:last-child {
+    padding-right: 2rem;
 }
 
 nav > a:active {
@@ -186,7 +193,6 @@ footer img {
         font-size: 14px;
         line-height: 20px;
     }
-
 
     /* FOOOTER */
     .kontakt_tekst {
