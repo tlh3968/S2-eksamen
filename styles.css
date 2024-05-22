@@ -116,12 +116,16 @@ nav > a:active {
 }
 .checklist_images {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
 }
 .checklist_img {
     width: 100%;
+    padding-left: 2rem;
     height: auto;
     margin-top: -7rem;
+    max-width: 80%;
 }
 
 .checklist_text {
@@ -136,10 +140,15 @@ nav > a:active {
     padding: 10px 20px;
     border: none;
     font-family: "Space Grotesk", sans-serif;
-    margin-top: 2rem; /* Optional: Adds some spacing above the button */
+    margin-top: 1rem; /* Optional: Adds some spacing above the button */
+    margin-left: 2rem;
+    margin-bottom: 1rem;
     align-self: center; /* Ensures the button is centered within the flex container */
     cursor: pointer;}
 
+    .checklist button:hover {
+        cursor: pointer;
+    }
 
 /* MAIN brødtekst */
 
@@ -297,12 +306,15 @@ footer img {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .main_text {
+    
+    .checklist_img {
         width: 50%;
+       padding-left: 20%;
+    }
+    .main_text {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
 
     /* FOOOTER */
     .kontakt_tekst {
@@ -321,9 +333,7 @@ footer img {
     #phone {
         padding-top: 3.9rem;
     }
-    .checklist_img {
-        width: 10%;
-    }
+    
  .quotes h2 {
     padding: 2rem;
  }
@@ -354,31 +364,56 @@ footer img {
 
     #phone {
         padding-top: 2rem;
+    } 
+
+    .checklist_images {
+        width: 20%;
+        padding-left: 2rem;
+    }
+
+    .checklist_container {
+        width: 50%;
+        padding-left: 2rem;
+    }
+    
+    .checklist {
+        flex-direction: row-reverse;
+        height: auto;
+        padding: 5rem;
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+    }
+
+    .checklist-text {
+        width: 500px;
+    }
+
+    .checklist_img {
+        width: 500px;
+        max-width: 100%;
+        padding-left: 0rem;
     }
 }
 @media only screen and (min-width: 1439px) { /* medium laptop*/
    
-    .checklist {
-        flex-direction: row-reverse;
-        height: 500px;
-    }
+
+   
     .checklist-text {
         width: 100rem;
     } 
 
-    .checklist_img {
-        width: 60%;
-        height: auto;
-        
-    }
 
-    .checklist_images {
-        align-items: end;
+    .checklist_images {  
+        display: flex;
+       align-self: center;
+       padding: 2rem;
+       padding-right: 20%;
     }
 
  .body_text {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     /*FOOOTER*/
     .kontakt_info {
@@ -389,9 +424,12 @@ footer img {
         margin-top: 20rem;
     }
 
+    footer {
+        padding-bottom: 3rem;
+        padding-left: 5rem;
+    }
    footer img {
     width: 100%;
-    padding-bottom: 0rem;
    }
    .kontakt_tekst {
     padding-right: 2rem;
@@ -405,9 +443,11 @@ footer img {
 
     .kontakt_tekst4 {
         order: 2;
+        padding-bottom: 0rem;
     }
     .kontakt_tekst2 {
         order: 3;
+        padding-bottom: 0rem;
     }
     #phone {
         
@@ -421,8 +461,9 @@ footer img {
         order: 4!important; 
         
     }
-    #cvr {
-        padding-bottom: 1.3rem;
+    
+    .quotes {
+        padding: 5rem;
     }
     .all_quotes {
         flex-direction: row;
@@ -431,13 +472,5 @@ footer img {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
-    main {
-        margin-top: 2rem;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-@media only screen and (min-width: 1919px) { /* medium laptop*/
     
 }
