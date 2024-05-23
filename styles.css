@@ -95,6 +95,20 @@ nav > a:active {
     text-decoration: underline;
 }
 
+/* HEADER */
+
+.app-banner > img{
+    width: 10%;
+}
+
+/* MAIN */
+
+section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
 /* every BODY hit the floor <- AKA BODY */
 
 
@@ -161,8 +175,6 @@ nav > a:active {
 .body_text {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 .body_text h2 {
     padding-bottom: 1rem;
@@ -255,8 +267,8 @@ nav > a:active {
  /*KONTAKT FORMULAR*/
  .contact_formular{
     background: #DCF0F0;
-    padding: 2rem;
-    max-width: 96%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     overflow: hidden;
 }
 .contact_formular h2{
