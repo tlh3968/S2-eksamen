@@ -27,6 +27,7 @@ h1 {
     letter-spacing: 0.6px;
     line-height: 37px;
     font-weight: 500;
+    padding-left: 2rem;
 }
  
 h2 {
@@ -95,6 +96,10 @@ nav > a:active {
 
 /* every BODY hit the floor <- AKA BODY */
 
+
+.alternative_text {
+    display: none;
+}
 /* Checkliste part */
 
 .checklist {
@@ -183,7 +188,7 @@ nav > a:active {
     width: 100%;
 }
  .all_quotes {
-    margin-top: 6rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,7 +216,91 @@ nav > a:active {
     padding: 5px;
  }
  
+ /*KONTAKT FORMULAR*/
+ .contact_formular{
+    background: #DCF0F0;
+    width:100%;
+    padding: 2rem;
+    overflow: hidden;
+}
+.contact_formular h2{
+    padding-bottom: 0rem;
+}
 
+.contact_formular img{
+    display: none;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin-top: 0.25rem;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #04393B;
+}
+#name {
+    margin-top: 2rem;
+}
+#comments {
+    background: white;
+    border: none;
+}
+#number {
+    margin-bottom: 3rem;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 1rem;
+    background: #DCF0F0;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #04393B;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #007BFF;
+}
+
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color:  #DCF0F0;
+    color:  #04393B;
+    border: solid 2px #04393B;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.contact-form button:active {
+    transform: scale(0.95); 
+}
+
+input[required]::placeholder {
+    color: #888;
+}
+
+input[required]::placeholder::before {
+    content: attr(placeholder);
+    color: #888;
+}
+
+input[required]::placeholder::after {
+    content: '*';
+    color: red;
+    margin-left: -1em;
+    padding-left: 1em;
+}
 /* FOOTER */
 footer {
     padding-left: 1.5rem;
@@ -303,8 +392,6 @@ footer img {
     /*checklist*/
     .body_text {
         flex-direction: row-reverse;
-        padding-left: 2rem;
-        padding-right: 2rem;
     }
     
     .checklist_img {
@@ -365,7 +452,7 @@ footer img {
     #phone {
         padding-top: 2rem;
     } 
-
+    
     .checklist_images {
         width: 20%;
         padding-left: 2rem;
@@ -373,20 +460,22 @@ footer img {
 
     .checklist_container {
         width: 50%;
-        padding-left: 2rem;
     }
     
     .checklist {
         flex-direction: row-reverse;
         height: auto;
         padding: 5rem;
+        padding-right: 15%;
         margin-top: 5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
         justify-content: space-between;
     }
 
+
     .checklist-text {
         width: 500px;
+        padding-left: 0rem;
     }
 
     .checklist_img {
@@ -409,6 +498,9 @@ footer img {
        align-self: center;
        padding: 2rem;
        padding-right: 20%;
+    }
+    h1 {
+        padding-left: 5rem;
     }
 
  .body_text {

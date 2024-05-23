@@ -26,7 +26,8 @@
         </nav>
     </header>
     <main>
-        <h1>Frokost app</h1>
+        <h1 class="mobile_text">Frokost app</h1>
+        <h1 class="alternative_text">Frokost appen er med til at gøre hverdagen lettere for den frokostansvarlige</h1>
         <section class="checklist">
             <div id="checklist_images">
             <img class="checklist_img" src="img/frokostapp-tillmelding.webp" alt="En mobil over En skål salat">
@@ -51,8 +52,7 @@
                     <p>Nedsætte udgifter på jeres madforbrug</p>
                 </div>
                 <button> Få tilbud </button>
-            </div>
-            
+            </div>  
         </section>
         <section class="body_text">
             <div class="main_text">
@@ -73,8 +73,28 @@
         <section class="guide_wrapper">
 
         </section>
-        <section class="kontakt_formular">
+        <section class="contact_formular">
 
+            <h2>Interesseret?</h2>
+            <p>Kontakt os og få et tilbud</p>
+            <div class="image-container">
+                <!-- Billede kan tilføjes her -->
+                <img src="billede.jpg" alt="Billede" class="form-image">
+            </div>
+            <form action="/submit" method="POST" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Navn*" required>
+
+                <input type="email" id="email" name="email" placeholder="Email*" required>
+    
+                <input type="text" id="company" name="company" placeholder="Virksomhed*" required>
+
+                 <input type="text" id="number" name="number" placeholder="Telefon (Valgfri)" required>
+
+                <label for="comments">Kommentar (Valgfri)</label>
+                <textarea id="comments" name="comments" placeholder="Skriv en kommentar"></textarea>
+    
+                <button type="submit">Indsend</button>
+            </form>
         </section>
         <section class="quotes">
             <h2>Hør hvad vores klienter siger</h2>
