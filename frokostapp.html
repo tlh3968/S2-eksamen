@@ -107,7 +107,12 @@
                 <!-- Billede kan tilføjes her -->
                 <img src="billede.jpg" alt="Billede" class="form-image">
             </div>
-            
+            <div class="custom-alert-overlay" id="messageSent">
+                <div class="custom-alert">
+                    <p id="customAlertMessage">'Tak for din besked, vi kontakter dig inden for X antal dage'</p>
+                    <button id="customAlertButton">OK</button>
+                </div>
+            </div>
             <form action="/submit" method="POST" class="contact-form">
                 <input type="text" id="name" name="name" placeholder="Navn*" >
 
