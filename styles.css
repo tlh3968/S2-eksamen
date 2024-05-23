@@ -211,12 +211,10 @@ section {
     flex-direction: column;
 }
 .body_text h2 {
-   margin-bottom: 1rem;
     margin-top: 1rem;
 }
 .main_text {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 /* Mad-wrapper/slideshow */
@@ -283,6 +281,13 @@ section {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+
+/*GUIDES FOR THE MIGHTY INTERESTED IN APPS*/
+.guide_wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* QUOTES*/
@@ -704,7 +709,7 @@ footer .logo {
         flex-direction: row; 
         justify-content: space-between; 
         align-items: flex-end; 
-        margin-top: 20rem;
+        margin-top: 10rem;
     }
 
     footer {

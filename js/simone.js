@@ -52,7 +52,7 @@
                 // Store the original placeholder if not already stored
                 if (!input.hasAttribute('data-error-shown')) {
                     input.setAttribute('data-original-placeholder', input.placeholder);
-                    input.placeholder = 'skal udfyldes';
+                    input.placeholder = 'Skal udfyldes*';
                     input.setAttribute('data-error-shown', 'true');
                 }
             } else {
