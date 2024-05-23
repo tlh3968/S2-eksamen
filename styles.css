@@ -291,9 +291,6 @@ section {
  .quote_name {
     color:#a3a6a8
  }
- .fa-quote-right, .fa-quote-left {
-    padding: 5px;
- }
  
 
  /*KONTAKT FORMULAR YAHOOOOOOOOOOOOOOOOOOOOO*/
@@ -405,11 +402,12 @@ footer p {
     letter-spacing: -0.5px;
     line-height: 24px;
 }
-footer .icon {
-    margin-top: 0.3rem;
-    padding-left: 1rem;
+footer .arrow {
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
 }
-footer img {
+
+footer .logo {
     width: 90%;
     height: auto;
     margin-top: 3rem;
