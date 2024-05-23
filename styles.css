@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -27,7 +28,7 @@ h1 {
     letter-spacing: 0.6px;
     line-height: 37px;
     font-weight: 500;
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
  
 h2 {
@@ -113,21 +114,21 @@ nav > a:active {
 }
 
 .checklist h2{
-    padding: 2rem;
+    margin: 2rem;
     align-items: center;
 }
 .checklist p{
-    padding-left: 2rem;
+   margin-left: 2rem;
 }
 .checklist_images {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    width: 100%; 
+    width: 96%; 
 }
 .checklist_img {
     width: 100%;
-    padding-left: 2rem;
+    margin-left: 2rem;
     height: auto;
     margin-top: -7rem;
     max-width: 80%;
@@ -160,8 +161,8 @@ nav > a:active {
 .body_text {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .body_text h2 {
     padding-bottom: 1rem;
@@ -221,14 +222,14 @@ nav > a:active {
  .quotes h2 {
     align-self: flex-start;
     text-align: left;
-    width: 100%;
+    width: 96%;
 }
  .all_quotes {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 96%;
  }
  .profilbillede {
     border-radius: 1000px;
@@ -255,8 +256,8 @@ nav > a:active {
  /*KONTAKT FORMULAR*/
  .contact_formular{
     background: #DCF0F0;
-    width:100%;
     padding: 2rem;
+    max-width: 96%;
     overflow: hidden;
 }
 .contact_formular h2{
@@ -298,7 +299,7 @@ nav > a:active {
     border: none;
     border-bottom: 1px solid #04393B;
     box-sizing: border-box;
-    width: 100%;
+    width: 96%;
 }
 
 .contact-form input:focus, 
@@ -308,7 +309,7 @@ nav > a:active {
 }
 
 
-.contact-form button {
+.contact_formular #submit {
     padding: 10px 15px;
     background-color:  #DCF0F0;
     color:  #04393B;
@@ -318,7 +319,7 @@ nav > a:active {
     align-self: flex-start;
 }
 
-.contact-form button:active {
+#submit:active {
     transform: scale(0.95); 
 }
 
@@ -516,7 +517,7 @@ footer img {
 
     .checklist_img {
         width: 500px;
-        max-width: 100%;
+        max-width: 98%;
         padding-left: 0rem;
     }
 }

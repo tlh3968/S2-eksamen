@@ -96,19 +96,20 @@
                 <!-- Billede kan tilføjes her -->
                 <img src="billede.jpg" alt="Billede" class="form-image">
             </div>
+            
             <form action="/submit" method="POST" class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Navn*" required>
+                <input type="text" id="name" name="name" placeholder="Navn*" >
 
-                <input type="email" id="email" name="email" placeholder="Email*" required>
+                <input type="email" id="email" name="email" placeholder="Email*" >
     
-                <input type="text" id="company" name="company" placeholder="Virksomhed*" required>
+                <input type="text" id="company" name="company" placeholder="Virksomhed*" >
 
-                 <input type="text" id="number" name="number" placeholder="Telefon (Valgfri)" required>
+                 <input type="text" id="number" name="number" placeholder="Telefon (Valgfri)" >
 
                 <label for="comments">Kommentar (Valgfri)</label>
                 <textarea id="comments" name="comments" placeholder="Skriv en kommentar"></textarea>
     
-                <button type="submit">Indsend</button>
+                <input id="submit" type="submit" value="Submit">
             </form>
         </section>
         <section class="quotes">
