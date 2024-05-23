@@ -179,29 +179,33 @@ nav > a:active {
     flex-direction: column;
     background-color: #aaba7d;
     color: white;
-    margin: 5rem -10px 0px -10px; 
+    margin: 5rem -10px 0px 0px; 
     align-items: center;
 }
 
 .image-list {
     text-align: left;
     padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .image-list img {
     display: block;
     margin: 0 auto 2rem auto;
-    width: 40%;
+    width: 35%;
     height: auto;
+    padding-bottom: 2rem;
 }
 
 .mad_wrapper h2 {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin: 0;
 }
 
 .mad_wrapper p {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin: 0;
 }
 
