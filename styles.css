@@ -205,16 +205,20 @@ section {
 
 .slideshow-container {
     margin: auto;
+    height: 600px;
+    position: relative;
 }
 
 .slide {
     display: none;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .image-item {
     display: block;
     margin: 0 auto;
-    width: 35%;
+    width: 60%;
     padding-bottom: 2rem;
     padding-top: 4rem;
 }
@@ -290,9 +294,6 @@ section {
 
  .quote_name {
     color:#a3a6a8
- }
- .fa-quote-right, .fa-quote-left {
-    padding: 5px;
  }
  
 
@@ -448,11 +449,12 @@ footer p {
     letter-spacing: -0.5px;
     line-height: 24px;
 }
-footer .icon {
-    margin-top: 0.3rem;
-    padding-left: 1rem;
+footer .arrow {
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
 }
-footer img {
+
+footer .logo {
     width: 90%;
     height: auto;
     margin-top: 3rem;
