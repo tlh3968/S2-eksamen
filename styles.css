@@ -205,16 +205,20 @@ section {
 
 .slideshow-container {
     margin: auto;
+    height: 600px;
+    position: relative;
 }
 
 .slide {
     display: none;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .image-item {
     display: block;
     margin: 0 auto;
-    width: 35%;
+    width: 60%;
     padding-bottom: 2rem;
     padding-top: 4rem;
 }
