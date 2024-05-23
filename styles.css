@@ -168,14 +168,46 @@ nav > a:active {
     padding-top: 1rem;
 }
 .main_text {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
+/* Mad-wrapper/slideshow */
+
+.mad_wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #aaba7d;
+    color: white;
+    margin: 5rem -10px 0px -10px; 
+    align-items: center;
+}
+
+.image-list {
+    text-align: left;
+    padding-top: 4rem;
+}
+
+.image-list img {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 40%;
+    height: auto;
+}
+
+.mad_wrapper h2 {
+    padding: 2rem;
+    margin: 0;
+}
+
+.mad_wrapper p {
+    padding: 0 2rem;
+    margin: 0;
+}
 
 /* QUOTES*/
  .quotes {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
