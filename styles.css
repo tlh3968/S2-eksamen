@@ -222,36 +222,21 @@ section {
 .mad_wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #aaba7d;
     color: white;
-    margin: 5rem -10px 0px 0px;
-    align-items: center;
     overflow: hidden;
 }
 
 .slideshow-container {
     margin: auto;
-    height: 600px;
-    position: relative;
-}
-
-.slide {
-    display: none;
-    height: 100%;
-    box-sizing: border-box;
+    height: 550px;
 }
 
 .image-item {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 300px;
     padding-bottom: 2rem;
-    padding-top: 4rem;
-}
-
-.mad_wrapper h2, .mad_wrapper p {
-    margin: 1rem 0;
 }
 
 .navigation-buttons {
@@ -583,9 +568,30 @@ footer .logo {
         padding-top: 3.9rem;
     }
     
- .quotes h2 {
-    padding: 2rem;
- }
+    .quotes h2 {
+        padding: 2rem;
+    }
+
+    /* Mad_wrapper */
+    .image-item {
+        width: 300px;
+        float: left;
+    }
+
+    .h2-mad {
+        width: 50%;
+        float: right;
+        margin-top: 5rem;
+    }
+
+    .p-mad {
+        width: 50%;
+        float: right;
+    }
+
+    .slideshow-container {
+        height: 400px;
+    }
 }
 
 @media only screen and (min-width: 1023px) { /* small laptop*/
@@ -664,6 +670,31 @@ footer .logo {
     .alternative_text {
         display: flex;
     }
+
+    /* Mad_wrapper */
+    .image-item {
+        width: 400px;
+        float: left;
+    }
+
+    .h2-mad {
+        width: 50%;
+        float: right;
+        margin-top: 7.5rem;
+        padding-left: 4rem;
+    }
+
+    .p-mad {
+        width: 50%;
+        float: right;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    .slideshow-container {
+        height: 400px;
+    }
+
 }
 @media only screen and (min-width: 1439px) { /* medium laptop*/
    
@@ -760,5 +791,30 @@ footer .logo {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+        /* Mad_wrapper */
+        .image-item {
+            width: 400px;
+            float: left;
+            padding-left: 5rem;
+        }
+    
+        .h2-mad {
+            width: 50%;
+            float: right;
+            margin-top: 7.5rem;
+            padding-left: 4rem;
+        }
+    
+        .p-mad {
+            width: 50%;
+            float: right;
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+    
+        .slideshow-container {
+            height: 400px;
+        }
     
 }
