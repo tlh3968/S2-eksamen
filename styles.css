@@ -190,7 +190,6 @@ nav > a:active {
 
 .image-list {
     text-align: left;
-    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 
@@ -198,8 +197,8 @@ nav > a:active {
     display: block;
     margin: 0 auto 2rem auto;
     width: 35%;
-    height: auto;
     padding-bottom: 2rem;
+    padding-top: 4rem;
 }
 
 .mad_wrapper h2 {
