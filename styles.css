@@ -122,8 +122,10 @@ section {
     flex-direction: column;
     background-color: #aaba7d;
     color: white;
-    margin: 10rem -10px 0px -10px; 
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
+    margin-top: 10rem;
     align-items: center;
 }
 
@@ -160,14 +162,18 @@ section {
     padding: 10px 20px;
     border: none;
     font-family: "Space Grotesk", sans-serif;
-    margin-top: 1rem; /* Optional: Adds some spacing above the button */
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
-    align-self: center; /* Ensures the button is centered within the flex container */
+    align-self: center; 
     cursor: pointer;}
 
     .checklist button:hover {
         cursor: pointer;
+    }
+
+    .checklist button:active {
+        transform: scale(0.95); 
     }
 
 /* MAIN brødtekst */
@@ -177,12 +183,12 @@ section {
     flex-direction: column;
 }
 .body_text h2 {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+   margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .main_text {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 /* Mad-wrapper/slideshow */
@@ -264,7 +270,8 @@ section {
     padding: 5px;
  }
  
- /*KONTAKT FORMULAR*/
+
+ /*KONTAKT FORMULAR YAHOOOOOOOOOOOOOOOOOOOOO*/
  .contact_formular{
     background: #DCF0F0;
     padding-bottom: 2rem;
@@ -289,8 +296,8 @@ section {
 
 .contact-form label {
     margin-bottom: 5px;
-    font-weight: bold;
     color: #04393B;
+    font-family: "Space Grotesk", sans-serif;
 }
 #name {
     margin-top: 2rem;
@@ -298,9 +305,10 @@ section {
 #comments {
     background: white;
     border: none;
+    padding-bottom: 5px;
 }
 #number {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .contact-form input, 
 .contact-form textarea {
@@ -327,7 +335,8 @@ section {
     border: solid 2px #04393B;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-start;
+    max-width: 100px;
+    align-self: center;
 }
 
 #submit:active {
@@ -351,8 +360,8 @@ input[required]::placeholder::after {
 }
 /* FOOTER */
 footer {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 3rem;
 }
 
