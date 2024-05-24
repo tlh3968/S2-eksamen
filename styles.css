@@ -314,7 +314,66 @@ section {
  .quote_name {
     color:#a3a6a8
  }
- 
+
+/* Guide wrapper */
+.guide_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+.slide-wrapper {
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.slide-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.image-list {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 65%;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.image-item2 {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: contain;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
 
  /*KONTAKT FORMULAR YAHOOOOOOOOOOOOOOOOOOOOO*/
  .contact_formular{
