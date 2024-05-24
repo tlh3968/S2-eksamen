@@ -283,13 +283,21 @@ section {
 .prev, .next {
     cursor: pointer;
     padding: 16px;
-    color: white;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
     margin: 0 10px;
     border-radius: 3px;
+}
+
+.prev img {
+    width: 20px;
+    height: 20px;
+}
+
+.next img {
+    width: 20px;
+    height: 20px;
 }
 
 .fade {
@@ -364,14 +372,11 @@ section {
 }
 
 .slide-wrapper {
-    overflow-x: auto;
-    margin-right: -4rem;
-    margin-left: -4rem;
+    overflow-x: 100%;
     display: flex;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    background-color: #03616E;
 }
 
 .slide-wrapper::-webkit-scrollbar {
@@ -380,7 +385,6 @@ section {
 
 .image-list {
     display: flex;
-    align-items: center;
 }
 
 .image-container2 {
@@ -388,12 +392,12 @@ section {
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
-    width: 65%;
+    width: 55%;
     scroll-snap-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin: 15px;
     border-radius: 40px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .image-item2 {
