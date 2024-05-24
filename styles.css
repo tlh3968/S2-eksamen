@@ -99,11 +99,16 @@ nav > a:active {
 .app-banner {
     display: flex;
     align-items: center;
-
+    gap: 1.5rem;
 }
 
 .app-banner > img {
     width: 80%;
+}
+
+.app-banner-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .app-banner:nth-child(2) {
@@ -118,6 +123,7 @@ nav > a:active {
 
 .arrow-large {
     margin-top: 15px;
+    width: 2rem;
 }
 
 #read-more .arrow {
