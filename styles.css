@@ -310,7 +310,6 @@ section {
     to {opacity: 1}
 }
 
-
 /*GUIDES FOR THE MIGHTY INTERESTED IN APPS*/
 .guide_wrapper {
     padding-top: 4rem;
@@ -361,22 +360,27 @@ section {
 .guide_wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
-    width: 100%;
-    max-width: 400px;
     margin-top: 2rem;
+    margin-right: -2rem;
+    margin-left: -2rem;
 }
 
 .slide-wrapper {
-    overflow-x: 100%;
+    overflow-x: scroll;
     display: flex;
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+}
+
+.image-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
 }
 
 .slide-wrapper::-webkit-scrollbar {
@@ -392,26 +396,27 @@ section {
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
-    width: 55%;
+    width: fill;
     scroll-snap-align: start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
     margin: 15px;
     border-radius: 40px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .image-item2 {
-    width: 100%;
+    width: 80%;
     height: auto;
     max-height: 50vh;
     object-fit: contain;
 }
 
 .image-caption {
+    margin: auto;
+    text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -691,6 +696,17 @@ footer .logo {
     .slideshow-container {
         height: 400px;
     }
+
+    /* Guide_wrapper */
+    .image-container3 {
+        display: flex;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+    }
+
+    .image-container2 {
+        margin: 15px;
+    }
 }
 
 @media only screen and (min-width: 1023px) { /* small laptop*/
@@ -790,8 +806,27 @@ footer .logo {
         padding-left: 4rem;
     }
 
-    .slideshow-container {
-        height: 400px;
+    /* Guide_wrapper */
+    .slide-wrapper {
+        overflow-x: visible;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .image-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container2 {
+        flex: 1 1 calc(25% - 30px);
+        margin: 15px;
+        box-shadow: none;
+    }
+
+    .image-container3 {
+        display: none;
     }
 
 }
@@ -891,29 +926,66 @@ footer .logo {
         padding-right: 2rem;
     }
 
-        /* Mad_wrapper */
-        .image-item {
-            width: 400px;
-            float: left;
-            padding-left: 5rem;
-        }
+    .contact_formular{
+        background: #DCF0F0;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+        overflow: hidden;
+    }
+
+    /* Mad_wrapper */
+    .image-item {
+        width: 400px;
+        float: left;
+        padding-left: 5rem;
+    }
     
-        .h2-mad {
-            width: 50%;
-            float: right;
-            margin-top: 7.5rem;
-            padding-left: 4rem;
-        }
+    .h2-mad {
+        width: 50%;
+        float: right;
+        margin-top: 7.5rem;
+        padding-left: 4rem;
+    }
     
-        .p-mad {
-            width: 50%;
-            float: right;
-            padding-right: 4rem;
-            padding-left: 4rem;
-        }
+    .p-mad {
+        width: 50%;
+        float: right;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
     
-        .slideshow-container {
-            height: 400px;
-        }
+    /* Guide_wrapper */
+    .slideshow-container {
+        height: 400px;
+    }
     
+    .slide-wrapper {
+        overflow-x: visible;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .image-container2 {
+        flex: 1 1 calc(25% - 30px);
+        margin: 15px;
+        box-shadow: none;
+        width: 400px;
+    }
+    
+    .image-container3 {
+        display: none;
+    }
+
+    .guide_wrapper {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
 }
