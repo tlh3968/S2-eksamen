@@ -243,7 +243,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .prev, .next {
@@ -331,10 +332,13 @@ section {
 
 .slide-wrapper {
     overflow-x: auto;
+    margin-right: -4rem;
+    margin-left: -4rem;
     display: flex;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    background-color: #03616E;
 }
 
 .slide-wrapper::-webkit-scrollbar {
@@ -346,7 +350,7 @@ section {
     align-items: center;
 }
 
-.image-container {
+.image-container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,7 +359,6 @@ section {
     scroll-snap-align: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
-    background-color: #fff;
     border-radius: 40px;
     padding: 10px;
 }
