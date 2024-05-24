@@ -10,6 +10,7 @@ main {
 
 header {
     padding-top: 100px;
+    overflow: hidden;
 }
 
 footer {
@@ -137,6 +138,32 @@ section {
     padding-right: 2rem;
 }
 
+.hover-container {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 80%;
+}
+
+#img-hovering {
+    width: 90%;
+
+}
+
+.hover-container > #img-hovering:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+    z-index: 2;
+}
+
+.hover-container > #img-hovering:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    width: 75%;
+    transform: translateX(-65%);
+    z-index: 1;
+    margin-left: -2rem;
+}
 
 /* every BODY hit the floor <- AKA BODY */
 
