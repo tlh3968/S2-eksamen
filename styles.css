@@ -61,6 +61,10 @@ p + .smallparagraph {
     font-weight: 400;
 }
 
+.desktop-text {
+    display: none;
+}
+
 /* NAV */
 nav {
     background-color: white;
@@ -92,12 +96,19 @@ nav > a:active {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-bottom: 9%;
+    text-decoration: none;
 }
 
 .app-banner-image {
         width: 50vw;
         height: 75vw;
         background-size: cover;
+        cursor: pointer;
+}
+
+.app-banner:nth-child(2) {
+    margin-top: 6%;
 }
 
 .app-banner:nth-child(3) {
@@ -115,7 +126,8 @@ nav > a:active {
 }
 
 .app-banner-text {
-    width: 40vw;
+    width: 37vw;
+    color: black;
 }
 
 .app-banner-text > h2 p {
@@ -148,22 +160,22 @@ section {
 .hover-container {
     position: relative;
     margin-top: 10%;
-    margin-bottom: 80%;
+    margin-bottom: 100%;
 }
 
-#img-hovering {
+.img-hovering {
     width: 90%;
 
 }
 
-.hover-container > #img-hovering:nth-child(1) {
+.hover-container > .img-hovering:nth-child(1) {
     position: absolute;
     left: 50%;
     transform: translateX(-35%);
     z-index: 2;
 }
 
-.hover-container > #img-hovering:nth-child(2) {
+.hover-container > .img-hovering:nth-child(2) {
     position: absolute;
     left: 50%;
     width: 75%;
@@ -748,6 +760,89 @@ footer .logo {
     h1 {
         font-size: 36px;
     }
+
+    .desktop-text {
+        display: block;
+    }
+
+    nav {
+        padding: 25px 8rem 25px 8rem;
+    }
+
+    header {
+        padding-top: 120px;
+    }
+
+    #frontpage section{
+        padding-bottom: 100px;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    header > h1 {
+        display: none;
+    }
+
+    .app-banner {
+        gap: 7.5vw;
+        margin-bottom: 0;
+    }
+
+    .app-banner:nth-child(2) {
+        margin-top: 0;
+    }
+    
+    .app-banner-image {
+        width: 30vw;
+        height: 40vw;
+    }
+    
+    .app-banner-text {
+        width: 25%;
+    }
+    
+    .app-banner:nth-child(2) .app-banner-text {
+        margin-bottom: 15%;
+    }
+
+    .app-banner:nth-child(3) .app-banner-text {
+        margin-top: 5%;
+    }
+
+    .app-banner:nth-child(3) {
+        flex-direction: row-reverse;
+        margin-top: -30vw;
+    }
+    
+    .app-banner h2 {
+        font-size: 48px;
+    }
+
+    .app-banner p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .concept {
+        display: flex;
+        flex-direction: row;
+        gap: 5%
+    }
+
+    .section-text {
+        width: 45%;
+    }
+
+    .hover-container {
+        width: 40%;
+        margin-top: 0;
+        margin-bottom: 35%;
+    }
+
+
+    .competencies {
+        background-color: #DCEDF5;
+    }
     
     .kontakt_tekst {
         padding-right: 12rem;
@@ -869,30 +964,6 @@ footer .logo {
 }
 @media only screen and (min-width: 1439px) { /* medium laptop*/
    
-    nav {
-        padding: 25px 8rem 25px 8rem;
-    }
-
-    header {
-        padding-top: 120px;
-    }
-
-    header > h1 {
-        font-size: 20px;
-    }
-
-    .app-banner > img {
-        width: 30%;
-    }
-
-    .app-banner:nth-child(2) {
-        transform: translateX(-7%);
-    }
-
-    .app-banner:nth-child(3) {
-        transform: translate(7%, -45%);
-    }
-
     .checklist {
         padding-left: 8rem;
         padding-top: 2rem;
@@ -1050,6 +1121,13 @@ footer .logo {
     .image-caption {
         font-size: 18px;
         width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) { /* desktop */
+    #read-more {
+        margin-top: -2%;
     }
 
 }
