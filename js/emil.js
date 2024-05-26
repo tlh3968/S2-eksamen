@@ -53,5 +53,3 @@ document.getElementById("slide1").addEventListener("click", function() {
 document.getElementById("slide2").addEventListener("click", function() {
     currentSlide(2);
 });
-
-

@@ -91,4 +91,3 @@
     customAlertButton.addEventListener('click', function() {
         customAlertOverlay.style.display = 'none';
     });
-
