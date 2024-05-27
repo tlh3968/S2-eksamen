@@ -646,9 +646,10 @@ footer .logo {
 }
 #contact_link {
     display: flex;
+    width: 10%;
     flex-direction: row;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
 }
 
 
@@ -751,6 +752,9 @@ footer .logo {
 
     .image-container2 {
         margin: 15px;
+    }
+    footer .arrow {
+        width: 10%;
     }
 }
 
@@ -1045,6 +1049,10 @@ footer .logo {
     footer img {
         order: 1;
         
+    }
+    
+    footer .logo {
+        padding-bottom: 0rem;
     }
     .contact_text {
         order: 4!important; 
