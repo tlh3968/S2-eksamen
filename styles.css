@@ -265,7 +265,7 @@ section {
 
 /* Mad-wrapper/slideshow */
 
-.mad_wrapper {
+.food_wrapper {
     display: flex;
     flex-direction: column;
     background-color: #aaba7d;
@@ -370,7 +370,7 @@ section {
     align-items: center;
     width: 96%;
  }
- .profilbillede {
+ .profile-picture {
     border-radius: 1000px;
     width: 20%;
     box-shadow: 0px 0px 10px rgb(170, 170, 170);
@@ -451,7 +451,6 @@ section {
     margin-bottom: 10px;
     font-size: 20px;
 }
-
 
  /*KONTAKT FORMULAR YAHOOOOOOOOOOOOOOOOOOOOO*/
  .contact_formular{
@@ -616,7 +615,7 @@ footer .logo {
     margin-top: 3rem;
     padding-bottom: 3rem;
 }
-.kontakt_tekst {
+.contact_text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -624,24 +623,24 @@ footer .logo {
     padding-bottom: 1.5rem;
 }
 
-.kontakt_tekst2 {
+.contact_text2 {
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-#kontakt_tekst3 {
+#contact_text3 {
     padding-right: 5.5rem;
 }
 
-.kontakt_tekst4 {
+.contact_text4 {
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-#kontakt_link {
+#contact_link {
     display: flex;
     flex-direction: row;
     padding-bottom: 1.5rem;
@@ -688,11 +687,11 @@ footer .logo {
     }
 
     /* FOOOTER */
-    .kontakt_tekst {
+    .contact_text {
         padding-right: 3.8rem;
     }
 
-    .kontakt_tekst4 {
+    .contact_text4 {
         flex-direction: row;
         padding-bottom: 1rem;
     }
@@ -715,13 +714,13 @@ footer .logo {
         float: left;
     }
 
-    .h2-mad {
+    .h2-food {
         width: 50%;
         float: right;
         margin-top: 5rem;
     }
 
-    .p-mad {
+    .p-food {
         width: 50%;
         float: right;
     }
@@ -839,20 +838,19 @@ footer .logo {
         margin-bottom: 35%;
     }
 
-
     .competencies {
         background-color: #DCEDF5;
     }
     
-    .kontakt_tekst {
+    .contact_text {
         padding-right: 12rem;
         padding-top: 0rem;
         padding-bottom: 0rem;
     }
-    #kontakt_tekst3 {
+    #contact_text3 {
         padding-right: 14rem;
     }
-    .kontakt_tekst2 {
+    .contact_text2 {
         padding-top: 0rem;
     }
 
@@ -919,14 +917,14 @@ footer .logo {
         margin-top: 2rem;
     }
 
-    .h2-mad {
+    .h2-food {
         width: 50%;
         float: right;
         margin-top: 6.5rem;
         padding-left: 3rem;
     }
 
-    .p-mad {
+    .p-food {
         width: 50%;
         float: right;
         padding-right: 4rem;
@@ -1003,7 +1001,7 @@ footer .logo {
         padding-bottom: 5rem;
     }
     /*FOOOTER*/
-    .kontakt_info {
+    .contact_info {
         display: flex;
         flex-direction: row; 
         justify-content: space-between; 
@@ -1018,21 +1016,21 @@ footer .logo {
    footer img {
     width: 100%;
    }
-   .kontakt_tekst {
+   .contact_text {
     padding-right: 2rem;
    }
-   #kontakt_tekst3 {
+   #contact_text3 {
     padding-right: 4rem;
-}
+    }
     #phone {
         padding-right: 0rem;
     }
 
-    .kontakt_tekst4 {
+    .contact_text4 {
         order: 2;
         padding-bottom: 0rem;
     }
-    .kontakt_tekst2 {
+    .contact_text2 {
         order: 3;
         padding-bottom: 0rem;
     }
@@ -1044,7 +1042,7 @@ footer .logo {
         order: 1;
         
     }
-    .kontakt_tekst {
+    .contact_text {
         order: 4!important; 
         
     }
@@ -1074,14 +1072,14 @@ footer .logo {
         padding-left: 12rem;
     }
     
-    .h2-mad {
+    .h2-food {
         width: 50%;
         float: right;
         margin-top: 7.5rem;
         padding-left: 4rem;
     }
     
-    .p-mad {
+    .p-food {
         width: 50%;
         float: right;
         padding-right: 4rem;
