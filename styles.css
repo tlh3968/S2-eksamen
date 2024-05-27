@@ -915,20 +915,22 @@ footer .logo {
     .image-item {
         width: 400px;
         float: left;
+        padding-left: 4rem;
+        margin-top: 2rem;
     }
 
     .h2-mad {
         width: 50%;
         float: right;
-        margin-top: 7.5rem;
-        padding-left: 4rem;
+        margin-top: 6.5rem;
+        padding-left: 3rem;
     }
 
     .p-mad {
         width: 50%;
         float: right;
         padding-right: 4rem;
-        padding-left: 4rem;
+        padding-left: 3rem;
     }
 
     /* Guide_wrapper */
@@ -1066,9 +1068,9 @@ footer .logo {
 
     /* Mad_wrapper */
     .image-item {
-        width: 400px;
+        width: 500px;
         float: left;
-        padding-left: 5rem;
+        padding-left: 12rem;
     }
     
     .h2-mad {
