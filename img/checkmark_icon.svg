@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 170">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
   <defs>
     <style>
       .cls-1 {
@@ -14,6 +14,10 @@
       }
     </style>
   </defs>
-  <circle class="cls-2" cx="87" cy="85" r="83"/>
-  <polyline class="cls-1" points="60 87 82.94 106.39 122 68"/>
+  <g id="Layer_4" data-name="Layer 4">
+    <g>
+      <circle class="cls-2" cx="85" cy="85" r="83"/>
+      <polyline class="cls-1" points="58 87 80.94 106.39 120 68"/>
+    </g>
+  </g>
 </svg>

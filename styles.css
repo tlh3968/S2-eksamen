@@ -236,6 +236,7 @@ section {
     width: 8rem;
     padding: 10px 20px;
     border: none;
+    background-color: white;
     font-family: "Space Grotesk", sans-serif;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -255,6 +256,7 @@ section {
 .body_text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 .body_text h2 {
     margin-top: 1rem;
