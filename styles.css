@@ -340,7 +340,7 @@ section {
 }
 
 .breadcrumb.active {
-    background-color: #000000;
+    background-color:  #04393B;
 }
 
 /*GUIDES FOR THE MIGHTY INTERESTED IN APPS*/
@@ -438,7 +438,7 @@ section {
 }
 
 .image-item2 {
-    width: 80%;
+    width: 75%;
     height: auto;
     max-height: 50vh;
     object-fit: contain;
@@ -998,6 +998,7 @@ footer .logo {
  .body_text {
         padding-left: 5rem;
         padding-right: 5rem;
+        padding-bottom: 5rem;
     }
     /*FOOOTER*/
     .kontakt_info {
