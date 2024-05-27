@@ -241,7 +241,9 @@ section {
     margin-top: 1rem;
     margin-bottom: 1rem;
     align-items: center; 
-    cursor: pointer;}
+    cursor: pointer;
+    background-color: white;
+}
 
     .checklist button:hover {
         cursor: pointer;
