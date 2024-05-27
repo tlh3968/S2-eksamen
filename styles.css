@@ -644,7 +644,6 @@ footer .logo {
 }
 #contact_link {
     display: flex;
-    width: 10%;
     flex-direction: row;
     margin-bottom: 1.5rem;
     margin-left: 2rem;
