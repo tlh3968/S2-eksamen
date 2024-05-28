@@ -146,6 +146,7 @@ nav > a:active {
     display: flex;
     opacity: 50%;
     justify-content: center;
+    cursor: pointer;
 }
 
 /* MAIN */

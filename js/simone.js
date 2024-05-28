@@ -10,12 +10,11 @@
     const requiredInputs = getRequiredInputs();
     requiredInputs.forEach(input => {
         input.setAttribute('data-original-placeholder', input.placeholder);
-
-        // Add focus event listener to remove error on click
+        /*console.log ("hi")*/
         input.addEventListener('focus', function() {
             input.classList.remove('error');
-            input.style.backgroundColor = ''; // Reset background color
-            input.style.color = ''; // Reset text color
+            input.style.backgroundColor = ''; 
+            input.style.color = ''; 
 
             // Restore the original placeholder if error was shown
             if (input.hasAttribute('data-error-shown')) {
@@ -27,8 +26,8 @@
         // Add input event listener to remove error on typing
         input.addEventListener('input', function() {
             input.classList.remove('error');
-            input.style.backgroundColor = ''; // Reset background color
-            input.style.color = ''; // Reset text color
+            input.style.backgroundColor = ''; 
+            input.style.color = ''; 
 
             // Restore the original placeholder if error was shown
             if (input.hasAttribute('data-error-shown')) {
@@ -41,7 +40,7 @@
     form.addEventListener('submit', function(event) {
         let formIsValid = true;
         const requiredInputs = getRequiredInputs();
-
+       
         requiredInputs.forEach(input => {
             if (!input.value.trim()) {
                 formIsValid = false;
@@ -91,3 +90,5 @@
     customAlertButton.addEventListener('click', function() {
         customAlertOverlay.style.display = 'none';
     });
+
+ 
