@@ -14,3 +14,36 @@ if (readMoreButton) {
         });
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const clientslide = document.getElementById('clientslide');
+    const imageUrls = [
+                    'img/client-logos/aperture.webp',
+                    'img/client-logos/black-mesa.webp',
+                    'img/client-logos/blume.webp',
+                    'img/client-logos/buy-n-large.webp',
+                    'img/client-logos/cyberdyne.webp',
+                    'img/client-logos/dunder-mifflin.webp',
+                    'img/client-logos/in-gen.webp',
+                    'img/client-logos/weyland.webp',
+                    'img/client-logos/abstergo.webp'
+        // Add more image URLs as needed
+    ];
+    const cloneCount = 2; // Adjust this number as needed for the desired repetition
+
+    // Create and append image elements
+    imageUrls.forEach(url => {
+        const img = document.createElement('img');
+        img.src = url;
+        clientslide.appendChild(img);
+    });
+
+    const images = clientslide.children;
+    const numImages = images.length;
+
+    // Clone the images and append them to the end of the slideshow
+    for (let i = 0; i < cloneCount * numImages; i++) {
+        const clone = images[i % numImages].cloneNode(true);
+        clientslide.appendChild(clone);
+    }
+});
