@@ -10,31 +10,22 @@
     const requiredInputs = getRequiredInputs();
     requiredInputs.forEach(input => {
         input.setAttribute('data-original-placeholder', input.placeholder);
-        /*console.log ("hi")*/
-        input.addEventListener('focus', function() {
+    
+        const handleFocusOrClick = function() {
             input.classList.remove('error');
             input.style.backgroundColor = ''; 
             input.style.color = ''; 
-
+    
             // Restore the original placeholder if error was shown
             if (input.hasAttribute('data-error-shown')) {
                 input.placeholder = input.getAttribute('data-original-placeholder');
                 input.removeAttribute('data-error-shown');
             }
-        });
-
-        // Add input event listener to remove error on typing
-        input.addEventListener('input', function() {
-            input.classList.remove('error');
-            input.style.backgroundColor = ''; 
-            input.style.color = ''; 
-
-            // Restore the original placeholder if error was shown
-            if (input.hasAttribute('data-error-shown')) {
-                input.placeholder = input.getAttribute('data-original-placeholder');
-                input.removeAttribute('data-error-shown');
-            }
-        });
+        };
+    
+        // Add focus and click event listener
+        input.addEventListener('focus', handleFocusOrClick);
+        input.addEventListener('click', handleFocusOrClick);
     });
 
     form.addEventListener('submit', function(event) {
@@ -42,11 +33,11 @@
         const requiredInputs = getRequiredInputs();
        
         requiredInputs.forEach(input => {
-            if (!input.value.trim()) {
+            if (!input.value.trim()) { //Checks if input is empty or only has a space
                 formIsValid = false;
                 input.classList.add('error');
-                input.style.backgroundColor = 'lightcoral'; // Pale red background
-                input.style.color = 'white'; // Error text color
+                input.style.backgroundColor = 'lightcoral'; 
+                input.style.color = 'white'; 
 
                 // Store the original placeholder if not already stored
                 if (!input.hasAttribute('data-error-shown')) {
@@ -56,8 +47,8 @@
                 }
             } else {
                 input.classList.remove('error');
-                input.style.backgroundColor = ''; // Reset background color
-                input.style.color = ''; // Reset text color
+                input.style.backgroundColor = ''; 
+                input.style.color = ''; 
 
                 // Restore the original placeholder
                 if (input.hasAttribute('data-error-shown')) {
@@ -73,7 +64,7 @@
         }
 
         // If form is valid, show custom alert and prevent form submission
-        event.preventDefault();  // Prevent actual form submission
+        event.preventDefault(); 
         showCustomAlert('Tak for din besked, vi kontakter dig inden for X antal dage');
     });
 
@@ -89,6 +80,7 @@
 
     customAlertButton.addEventListener('click', function() {
         customAlertOverlay.style.display = 'none';
+        //Console.log ("hello world")
     });
 
  
