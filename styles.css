@@ -186,6 +186,28 @@ section {
 
 /* every BODY hit the floor <- AKA BODY */
 
+/* Klientlogoer slideshow */
+
+.clients-slideshow {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite; 
+}
+
+.clients-slideshow img {
+    flex: 0 0 auto;
+    width: 150px;
+    margin-right: 20px; 
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
 
 .alternative_text {
     display: none;
