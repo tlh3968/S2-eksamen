@@ -1,6 +1,6 @@
 const readMoreButton = document.getElementById('read-more');
     
-// Tjekker om elementet med id "read-more" findes
+// Tjekker om elementet med id 'read-more' findes
 if (readMoreButton) {
     // Tilføjer en event listener til read-more knappen, der lytter efter brugerens klik
     readMoreButton.addEventListener('click', function() {
@@ -10,40 +10,43 @@ if (readMoreButton) {
         // Scroller vinduet ned med 80% af viewport højden
         window.scrollBy({
             top: scrollAmount,
-            behavior: 'smooth' // Smooth scroll animation
+            behavior: 'smooth' // Giver den en smooth animation
         });
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const clientslide = document.getElementById('clientslide');
-    const imageUrls = [
-                    'img/client-logos/aperture.webp',
-                    'img/client-logos/black-mesa.webp',
-                    'img/client-logos/blume.webp',
-                    'img/client-logos/buy-n-large.webp',
-                    'img/client-logos/cyberdyne.webp',
-                    'img/client-logos/dunder-mifflin.webp',
-                    'img/client-logos/in-gen.webp',
-                    'img/client-logos/weyland.webp',
-                    'img/client-logos/abstergo.webp'
-        // Add more image URLs as needed
-    ];
-    const cloneCount = 2; // Adjust this number as needed for the desired repetition
+// Logo slides sektion
 
-    // Create and append image elements
-    imageUrls.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        clientslide.appendChild(img);
-    });
+// Hent elementet med id'et 'clientslide'
+const clientslide = document.getElementById('clientslide');
 
-    const images = clientslide.children;
-    const numImages = images.length;
+// Array af billed-URL'er for klientlogoer
+const imageUrls = [
+    'img/client-logos/aperture.webp',
+    'img/client-logos/black-mesa.webp',
+    'img/client-logos/blume.webp',
+    'img/client-logos/buy-n-large.webp',
+    'img/client-logos/cyberdyne.webp',
+    'img/client-logos/dunder-mifflin.webp',
+    'img/client-logos/in-gen.webp',
+    'img/client-logos/weyland.webp',
+    'img/client-logos/abstergo.webp'
+];
 
-    // Clone the images and append them to the end of the slideshow
-    for (let i = 0; i < cloneCount * numImages; i++) {
-        const clone = images[i % numImages].cloneNode(true);
-        clientslide.appendChild(clone);
-    }
+const cloneCount = 2; // Justér antallet af duplikationer af sliden
+
+// Opret billedelement, giv den et URL og tilføj den til 'clientslide' elementet
+imageUrls.forEach(url => {
+    const img = document.createElement('img');
+    img.src = url;
+    clientslide.appendChild(img);
 });
+
+const images = clientslide.children; // Hent alle billed elementer i 'clientslide'
+const numImages = images.length;
+
+// Dupliker billederne og tilføj dem til slutningen af slideshowet
+for (let i = 0; i < cloneCount * numImages; i++) {
+    const clone = images[i % numImages].cloneNode(true); // Opret en klon af hvert billede
+    clientslide.appendChild(clone); // Tilføj klonen til 'clientslide'
+}
