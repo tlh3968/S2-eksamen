@@ -547,6 +547,7 @@ section {
 
 #submit:hover {
     border: solid 2px #03616E;
+    color: #03616E;
 }
 
 #submit:active {
@@ -787,7 +788,7 @@ footer .logo {
         font-size: 18px;
         line-height: 30px;
     }
-    
+
     h3 {
         font-size: 20px;
     }
