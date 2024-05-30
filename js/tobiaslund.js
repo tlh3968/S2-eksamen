@@ -13,6 +13,10 @@ if (readMoreButton) {
             behavior: 'smooth' // Giver den en smooth animation
         });
     });
+} 
+
+else {
+    console.log("Fejl: Læs mere knap ikke fundet");
 }
 
 // Logo slides sektion
