@@ -37,7 +37,7 @@ const imageUrls = [
     'img/client-logos/abstergo.webp'
 ];
 
-const cloneCount = 2; // Justér antallet af duplikationer af sliden
+const cloneCount = 10; // Justér antallet af duplikationer af sliden
 
 // Opret billedelement, giv den et URL og tilføj den til 'clientslide' elementet
 imageUrls.forEach(url => {
@@ -52,5 +52,5 @@ const numImages = images.length;
 // Dupliker billederne og tilføj dem til slutningen af slideshowet
 for (let i = 0; i < cloneCount * numImages; i++) {
     const clone = images[i % numImages].cloneNode(true); // Opret en klon af hvert billede
-    clientslide.appendChild(clone); // Tilføj klonen til 'clientslide'
+    clientslide.appendChild(clone); // Tilføj klonen til 'clientslide'   
 }
